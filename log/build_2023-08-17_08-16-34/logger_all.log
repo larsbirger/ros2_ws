@@ -1,0 +1,783 @@
+[1.044s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.044s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fc82eb93910>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=2, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fc82eb93910>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fc82eb93e80>)
+[1.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.153s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/rocotics/ros2_ws'
+[1.153s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.153s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.153s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.153s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.188s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.188s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.188s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.188s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.189s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.189s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.189s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.189s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.189s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.190s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.190s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.190s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.190s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.190s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.192s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.192s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.192s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.192s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.192s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.192s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.192s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['ignore', 'ignore_ament_install']
+[1.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'ignore'
+[1.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'ignore_ament_install'
+[1.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['colcon_pkg']
+[1.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'colcon_pkg'
+[1.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['colcon_meta']
+[1.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'colcon_meta'
+[1.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['ros']
+[1.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'ros'
+[1.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['cmake', 'python']
+[1.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'cmake'
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'python'
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['python_setup_py']
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'python_setup_py'
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extensions ['ignore', 'ignore_ament_install']
+[1.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'ignore'
+[1.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'ignore_ament_install'
+[1.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extensions ['colcon_pkg']
+[1.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'colcon_pkg'
+[1.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extensions ['colcon_meta']
+[1.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'colcon_meta'
+[1.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extensions ['ros']
+[1.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'ros'
+[1.205s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_aruco/ros2_aruco' with type 'ros.ament_python' and name 'ros2_aruco'
+[1.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'ignore'
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'ignore_ament_install'
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extensions ['colcon_pkg']
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'colcon_pkg'
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extensions ['colcon_meta']
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'colcon_meta'
+[1.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extensions ['ros']
+[1.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'ros'
+[1.209s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_aruco/ros2_aruco_interfaces' with type 'ros.ament_cmake' and name 'ros2_aruco_interfaces'
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extensions ['ignore', 'ignore_ament_install']
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'ignore'
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'ignore_ament_install'
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extensions ['colcon_pkg']
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'colcon_pkg'
+[1.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extensions ['colcon_meta']
+[1.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'colcon_meta'
+[1.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extensions ['ros']
+[1.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'ros'
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extensions ['cmake', 'python']
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'cmake'
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'python'
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extensions ['python_setup_py']
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials) by extension 'python_setup_py'
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/ros_tutorials) by extensions ['ignore', 'ignore_ament_install']
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/ros_tutorials) by extension 'ignore'
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/ros_tutorials) ignored
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/roscpp_tutorials) by extensions ['ignore', 'ignore_ament_install']
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/roscpp_tutorials) by extension 'ignore'
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/roscpp_tutorials) ignored
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/rospy_tutorials) by extensions ['ignore', 'ignore_ament_install']
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/rospy_tutorials) by extension 'ignore'
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tutorials/rospy_tutorials) ignored
+[1.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation) by extensions ['ignore', 'ignore_ament_install']
+[1.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation) by extension 'ignore'
+[1.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation) by extension 'ignore_ament_install'
+[1.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation) by extensions ['colcon_pkg']
+[1.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation) by extension 'colcon_pkg'
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation) by extensions ['colcon_meta']
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation) by extension 'colcon_meta'
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation) by extensions ['ros']
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation) by extension 'ros'
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation) by extensions ['cmake', 'python']
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation) by extension 'cmake'
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation) by extension 'python'
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation) by extensions ['python_setup_py']
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation) by extension 'python_setup_py'
+[1.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation) by extensions ['ignore', 'ignore_ament_install']
+[1.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation) by extension 'ignore'
+[1.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation) by extension 'ignore_ament_install'
+[1.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation) by extensions ['colcon_pkg']
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation) by extension 'colcon_pkg'
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation) by extensions ['colcon_meta']
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation) by extension 'colcon_meta'
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation) by extensions ['ros']
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation) by extension 'ros'
+[1.221s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_manipulation/turtlebot3_manipulation' with type 'ros.ament_cmake' and name 'turtlebot3_manipulation'
+[1.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_bringup) by extensions ['ignore', 'ignore_ament_install']
+[1.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_bringup) by extension 'ignore'
+[1.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_bringup) by extension 'ignore_ament_install'
+[1.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_bringup) by extensions ['colcon_pkg']
+[1.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_bringup) by extension 'colcon_pkg'
+[1.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_bringup) by extensions ['colcon_meta']
+[1.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_bringup) by extension 'colcon_meta'
+[1.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_bringup) by extensions ['ros']
+[1.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_bringup) by extension 'ros'
+[1.226s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_manipulation/turtlebot3_manipulation_bringup' with type 'ros.ament_cmake' and name 'turtlebot3_manipulation_bringup'
+[1.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_cartographer) by extensions ['ignore', 'ignore_ament_install']
+[1.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_cartographer) by extension 'ignore'
+[1.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_cartographer) by extension 'ignore_ament_install'
+[1.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_cartographer) by extensions ['colcon_pkg']
+[1.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_cartographer) by extension 'colcon_pkg'
+[1.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_cartographer) by extensions ['colcon_meta']
+[1.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_cartographer) by extension 'colcon_meta'
+[1.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_cartographer) by extensions ['ros']
+[1.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_cartographer) by extension 'ros'
+[1.230s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_manipulation/turtlebot3_manipulation_cartographer' with type 'ros.ament_cmake' and name 'turtlebot3_manipulation_cartographer'
+[1.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_description) by extensions ['ignore', 'ignore_ament_install']
+[1.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_description) by extension 'ignore'
+[1.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_description) by extension 'ignore_ament_install'
+[1.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_description) by extensions ['colcon_pkg']
+[1.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_description) by extension 'colcon_pkg'
+[1.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_description) by extensions ['colcon_meta']
+[1.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_description) by extension 'colcon_meta'
+[1.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_description) by extensions ['ros']
+[1.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_description) by extension 'ros'
+[1.233s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_manipulation/turtlebot3_manipulation_description' with type 'ros.ament_cmake' and name 'turtlebot3_manipulation_description'
+[1.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_hardware) by extensions ['ignore', 'ignore_ament_install']
+[1.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_hardware) by extension 'ignore'
+[1.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_hardware) by extension 'ignore_ament_install'
+[1.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_hardware) by extensions ['colcon_pkg']
+[1.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_hardware) by extension 'colcon_pkg'
+[1.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_hardware) by extensions ['colcon_meta']
+[1.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_hardware) by extension 'colcon_meta'
+[1.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_hardware) by extensions ['ros']
+[1.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_hardware) by extension 'ros'
+[1.236s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_manipulation/turtlebot3_manipulation_hardware' with type 'ros.ament_cmake' and name 'turtlebot3_manipulation_hardware'
+[1.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[1.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config) by extension 'ignore'
+[1.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config) by extension 'ignore_ament_install'
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config) by extensions ['colcon_pkg']
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config) by extension 'colcon_pkg'
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config) by extensions ['colcon_meta']
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config) by extension 'colcon_meta'
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config) by extensions ['ros']
+[1.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config) by extension 'ros'
+[1.242s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config' with type 'ros.ament_cmake' and name 'turtlebot3_manipulation_moveit_config'
+[1.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_navigation2) by extensions ['ignore', 'ignore_ament_install']
+[1.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_navigation2) by extension 'ignore'
+[1.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_navigation2) by extension 'ignore_ament_install'
+[1.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_navigation2) by extensions ['colcon_pkg']
+[1.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_navigation2) by extension 'colcon_pkg'
+[1.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_navigation2) by extensions ['colcon_meta']
+[1.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_navigation2) by extension 'colcon_meta'
+[1.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_navigation2) by extensions ['ros']
+[1.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_navigation2) by extension 'ros'
+[1.247s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_manipulation/turtlebot3_manipulation_navigation2' with type 'ros.ament_cmake' and name 'turtlebot3_manipulation_navigation2'
+[1.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_teleop) by extensions ['ignore', 'ignore_ament_install']
+[1.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_teleop) by extension 'ignore'
+[1.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_teleop) by extension 'ignore_ament_install'
+[1.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_teleop) by extensions ['colcon_pkg']
+[1.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_teleop) by extension 'colcon_pkg'
+[1.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_teleop) by extensions ['colcon_meta']
+[1.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_teleop) by extension 'colcon_meta'
+[1.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_teleop) by extensions ['ros']
+[1.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulation/turtlebot3_manipulation_teleop) by extension 'ros'
+[1.252s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_manipulation/turtlebot3_manipulation_teleop' with type 'ros.ament_cmake' and name 'turtlebot3_manipulation_teleop'
+[1.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.335s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 391 installed packages in /opt/ros/foxy
+[1.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.603s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_args' from command line to 'None'
+[1.603s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_target' from command line to 'None'
+[1.603s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.603s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_clean_cache' from command line to 'False'
+[1.603s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_clean_first' from command line to 'False'
+[1.603s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_force_configure' from command line to 'False'
+[1.604s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'ament_cmake_args' from command line to 'None'
+[1.604s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'catkin_cmake_args' from command line to 'None'
+[1.604s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.604s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_aruco' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rocotics/ros2_ws/build/ros2_aruco', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rocotics/ros2_ws/install/ros2_aruco', 'merge_install': False, 'path': '/home/rocotics/ros2_ws/src/ros2_aruco/ros2_aruco', 'symlink_install': False, 'test_result_base': None}
+[1.608s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_args' from command line to 'None'
+[1.608s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_target' from command line to 'None'
+[1.608s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.608s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[1.608s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[1.608s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[1.608s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.609s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_aruco_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rocotics/ros2_ws/build/ros2_aruco_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces', 'merge_install': False, 'path': '/home/rocotics/ros2_ws/src/ros2_aruco/ros2_aruco_interfaces', 'symlink_install': False, 'test_result_base': None}
+[1.613s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_cartographer' build argument 'cmake_args' from command line to 'None'
+[1.613s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_cartographer' build argument 'cmake_target' from command line to 'None'
+[1.613s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_cartographer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.613s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_cartographer' build argument 'cmake_clean_cache' from command line to 'False'
+[1.613s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_cartographer' build argument 'cmake_clean_first' from command line to 'False'
+[1.613s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_cartographer' build argument 'cmake_force_configure' from command line to 'False'
+[1.613s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_cartographer' build argument 'ament_cmake_args' from command line to 'None'
+[1.613s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_cartographer' build argument 'catkin_cmake_args' from command line to 'None'
+[1.614s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_cartographer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.614s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_manipulation_cartographer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_cartographer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer', 'merge_install': False, 'path': '/home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_cartographer', 'symlink_install': False, 'test_result_base': None}
+[1.619s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_description' build argument 'cmake_args' from command line to 'None'
+[1.619s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_description' build argument 'cmake_target' from command line to 'None'
+[1.619s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.619s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_description' build argument 'cmake_clean_cache' from command line to 'False'
+[1.619s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_description' build argument 'cmake_clean_first' from command line to 'False'
+[1.619s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_description' build argument 'cmake_force_configure' from command line to 'False'
+[1.619s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_description' build argument 'ament_cmake_args' from command line to 'None'
+[1.620s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_description' build argument 'catkin_cmake_args' from command line to 'None'
+[1.620s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.620s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_manipulation_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description', 'merge_install': False, 'path': '/home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_description', 'symlink_install': False, 'test_result_base': None}
+[1.624s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_hardware' build argument 'cmake_args' from command line to 'None'
+[1.625s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_hardware' build argument 'cmake_target' from command line to 'None'
+[1.625s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_hardware' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.625s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_hardware' build argument 'cmake_clean_cache' from command line to 'False'
+[1.625s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_hardware' build argument 'cmake_clean_first' from command line to 'False'
+[1.625s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_hardware' build argument 'cmake_force_configure' from command line to 'False'
+[1.625s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_hardware' build argument 'ament_cmake_args' from command line to 'None'
+[1.625s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_hardware' build argument 'catkin_cmake_args' from command line to 'None'
+[1.625s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_hardware' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.625s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_manipulation_hardware' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_hardware', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware', 'merge_install': False, 'path': '/home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_hardware', 'symlink_install': False, 'test_result_base': None}
+[1.630s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_navigation2' build argument 'cmake_args' from command line to 'None'
+[1.630s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_navigation2' build argument 'cmake_target' from command line to 'None'
+[1.630s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_navigation2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.630s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_navigation2' build argument 'cmake_clean_cache' from command line to 'False'
+[1.631s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_navigation2' build argument 'cmake_clean_first' from command line to 'False'
+[1.631s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_navigation2' build argument 'cmake_force_configure' from command line to 'False'
+[1.631s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_navigation2' build argument 'ament_cmake_args' from command line to 'None'
+[1.631s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_navigation2' build argument 'catkin_cmake_args' from command line to 'None'
+[1.631s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_navigation2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.631s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_manipulation_navigation2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_navigation2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2', 'merge_install': False, 'path': '/home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_navigation2', 'symlink_install': False, 'test_result_base': None}
+[1.636s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_bringup' build argument 'cmake_args' from command line to 'None'
+[1.636s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_bringup' build argument 'cmake_target' from command line to 'None'
+[1.637s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.637s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[1.637s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[1.637s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[1.637s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[1.637s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[1.637s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.637s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_manipulation_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup', 'merge_install': False, 'path': '/home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_bringup', 'symlink_install': False, 'test_result_base': None}
+[1.642s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_moveit_config' build argument 'cmake_args' from command line to 'None'
+[1.642s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_moveit_config' build argument 'cmake_target' from command line to 'None'
+[1.642s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_moveit_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.642s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_moveit_config' build argument 'cmake_clean_cache' from command line to 'False'
+[1.642s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_moveit_config' build argument 'cmake_clean_first' from command line to 'False'
+[1.642s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_moveit_config' build argument 'cmake_force_configure' from command line to 'False'
+[1.642s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_moveit_config' build argument 'ament_cmake_args' from command line to 'None'
+[1.642s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_moveit_config' build argument 'catkin_cmake_args' from command line to 'None'
+[1.642s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_moveit_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.642s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_manipulation_moveit_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_moveit_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config', 'merge_install': False, 'path': '/home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config', 'symlink_install': False, 'test_result_base': None}
+[1.647s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_teleop' build argument 'cmake_args' from command line to 'None'
+[1.647s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_teleop' build argument 'cmake_target' from command line to 'None'
+[1.647s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.648s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[1.648s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[1.648s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[1.648s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[1.648s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[1.648s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.648s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_manipulation_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop', 'merge_install': False, 'path': '/home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_teleop', 'symlink_install': False, 'test_result_base': None}
+[1.652s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation' build argument 'cmake_args' from command line to 'None'
+[1.652s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation' build argument 'cmake_target' from command line to 'None'
+[1.652s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.652s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation' build argument 'cmake_clean_cache' from command line to 'False'
+[1.652s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation' build argument 'cmake_clean_first' from command line to 'False'
+[1.652s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation' build argument 'cmake_force_configure' from command line to 'False'
+[1.652s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation' build argument 'ament_cmake_args' from command line to 'None'
+[1.652s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation' build argument 'catkin_cmake_args' from command line to 'None'
+[1.652s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.653s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_manipulation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rocotics/ros2_ws/build/turtlebot3_manipulation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rocotics/ros2_ws/install/turtlebot3_manipulation', 'merge_install': False, 'path': '/home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation', 'symlink_install': False, 'test_result_base': None}
+[1.655s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.668s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.669s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_description' with build type 'ament_cmake'
+[1.669s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_description'
+[1.691s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.691s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.691s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.717s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_cartographer' with build type 'ament_cmake'
+[1.719s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_cartographer'
+[1.732s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.733s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.808s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_description -DCMAKE_INSTALL_PREFIX=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description
+[1.841s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_cartographer': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_cartographer -DCMAKE_INSTALL_PREFIX=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer
+[4.739s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_description -DCMAKE_INSTALL_PREFIX=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description
+[4.744s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/rocotics/ros2_ws/build/turtlebot3_manipulation_description -- -j2 -l2
+[4.821s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_cartographer -DCMAKE_INSTALL_PREFIX=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer
+[4.826s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_cartographer': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/rocotics/ros2_ws/build/turtlebot3_manipulation_cartographer -- -j2 -l2
+[4.922s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/rocotics/ros2_ws/build/turtlebot3_manipulation_description -- -j2 -l2
+[5.012s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/rocotics/ros2_ws/build/turtlebot3_manipulation_cartographer -- -j2 -l2
+[5.112s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/rocotics/ros2_ws/build/turtlebot3_manipulation_description
+[5.151s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_cartographer': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/rocotics/ros2_ws/build/turtlebot3_manipulation_cartographer
+[5.235s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_manipulation_description)
+[5.238s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/rocotics/ros2_ws/build/turtlebot3_manipulation_description
+[5.260s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description' for CMake module files
+[5.261s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description' for CMake config files
+[5.262s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_manipulation_description', 'cmake_prefix_path')
+[5.270s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/share/turtlebot3_manipulation_description/hook/cmake_prefix_path.ps1'
+[5.272s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/share/turtlebot3_manipulation_description/hook/cmake_prefix_path.dsv'
+[5.276s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/share/turtlebot3_manipulation_description/hook/cmake_prefix_path.sh'
+[5.281s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/bin'
+[5.281s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/lib/pkgconfig/turtlebot3_manipulation_description.pc'
+[5.282s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/lib/python3.8/site-packages'
+[5.283s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/bin'
+[5.290s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/share/turtlebot3_manipulation_description/package.ps1'
+[5.293s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/share/turtlebot3_manipulation_description/package.dsv'
+[5.294s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/share/turtlebot3_manipulation_description/package.sh'
+[5.297s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/share/turtlebot3_manipulation_description/package.bash'
+[5.298s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/share/turtlebot3_manipulation_description/package.zsh'
+[5.300s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/share/colcon-core/packages/turtlebot3_manipulation_description)
+[5.315s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_manipulation_cartographer)
+[5.318s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/rocotics/ros2_ws/build/turtlebot3_manipulation_cartographer
+[5.338s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer' for CMake module files
+[5.339s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer' for CMake config files
+[5.340s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_manipulation_cartographer', 'cmake_prefix_path')
+[5.347s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/hook/cmake_prefix_path.ps1'
+[5.348s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/hook/cmake_prefix_path.dsv'
+[5.349s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/hook/cmake_prefix_path.sh'
+[5.351s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/bin'
+[5.351s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/lib/pkgconfig/turtlebot3_manipulation_cartographer.pc'
+[5.352s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/lib/python3.8/site-packages'
+[5.352s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/bin'
+[5.362s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/package.ps1'
+[5.363s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/package.dsv'
+[5.365s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/package.sh'
+[5.367s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/package.bash'
+[5.368s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/package.zsh'
+[5.369s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/share/colcon-core/packages/turtlebot3_manipulation_cartographer)
+[5.439s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_manipulation_description)
+[5.454s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description' for CMake module files
+[5.457s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description' for CMake config files
+[5.457s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_manipulation_description', 'cmake_prefix_path')
+[5.464s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/share/turtlebot3_manipulation_description/hook/cmake_prefix_path.ps1'
+[5.466s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/share/turtlebot3_manipulation_description/hook/cmake_prefix_path.dsv'
+[5.468s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/share/turtlebot3_manipulation_description/hook/cmake_prefix_path.sh'
+[5.470s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/bin'
+[5.471s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/lib/pkgconfig/turtlebot3_manipulation_description.pc'
+[5.471s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/lib/python3.8/site-packages'
+[5.472s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/bin'
+[5.485s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/share/turtlebot3_manipulation_description/package.ps1'
+[5.488s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/share/turtlebot3_manipulation_description/package.dsv'
+[5.491s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/share/turtlebot3_manipulation_description/package.sh'
+[5.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/share/turtlebot3_manipulation_description/package.bash'
+[5.493s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/share/turtlebot3_manipulation_description/package.zsh'
+[5.494s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description/share/colcon-core/packages/turtlebot3_manipulation_description)
+[5.496s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_bringup' with build type 'ament_cmake'
+[5.497s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_bringup'
+[5.508s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.510s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.554s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_manipulation_cartographer)
+[5.567s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer' for CMake module files
+[5.569s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer' for CMake config files
+[5.570s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_manipulation_cartographer', 'cmake_prefix_path')
+[5.579s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/hook/cmake_prefix_path.ps1'
+[5.582s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/hook/cmake_prefix_path.dsv'
+[5.583s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/hook/cmake_prefix_path.sh'
+[5.585s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/bin'
+[5.586s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/lib/pkgconfig/turtlebot3_manipulation_cartographer.pc'
+[5.586s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/lib/python3.8/site-packages'
+[5.587s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/bin'
+[5.596s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/package.ps1'
+[5.601s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/package.dsv'
+[5.604s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/package.sh'
+[5.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/package.bash'
+[5.607s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/package.zsh'
+[5.609s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer/share/colcon-core/packages/turtlebot3_manipulation_cartographer)
+[5.615s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config' with build type 'ament_cmake'
+[5.615s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config'
+[5.624s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.624s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.679s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_bringup': AMENT_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/opt/ros/foxy /usr/bin/cmake /home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_bringup -DCMAKE_INSTALL_PREFIX=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup
+[5.703s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_moveit_config': AMENT_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/opt/ros/foxy /usr/bin/cmake /home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config -DCMAKE_INSTALL_PREFIX=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config
+[8.698s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/opt/ros/foxy /usr/bin/cmake /home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config -DCMAKE_INSTALL_PREFIX=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config
+[8.707s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_moveit_config': AMENT_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/opt/ros/foxy /usr/bin/cmake --build /home/rocotics/ros2_ws/build/turtlebot3_manipulation_moveit_config -- -j2 -l2
+[8.841s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_bringup' returned '0': AMENT_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/opt/ros/foxy /usr/bin/cmake /home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_bringup -DCMAKE_INSTALL_PREFIX=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup
+[8.856s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_bringup': AMENT_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/opt/ros/foxy /usr/bin/cmake --build /home/rocotics/ros2_ws/build/turtlebot3_manipulation_bringup -- -j2 -l2
+[8.883s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/opt/ros/foxy /usr/bin/cmake --build /home/rocotics/ros2_ws/build/turtlebot3_manipulation_moveit_config -- -j2 -l2
+[9.018s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_moveit_config': AMENT_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/opt/ros/foxy /usr/bin/cmake --install /home/rocotics/ros2_ws/build/turtlebot3_manipulation_moveit_config
+[9.055s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_bringup' returned '0': AMENT_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/opt/ros/foxy /usr/bin/cmake --build /home/rocotics/ros2_ws/build/turtlebot3_manipulation_bringup -- -j2 -l2
+[9.098s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_manipulation_moveit_config)
+[9.105s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/opt/ros/foxy /usr/bin/cmake --install /home/rocotics/ros2_ws/build/turtlebot3_manipulation_moveit_config
+[9.115s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config' for CMake module files
+[9.117s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config' for CMake config files
+[9.118s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_manipulation_moveit_config', 'cmake_prefix_path')
+[9.131s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/hook/cmake_prefix_path.ps1'
+[9.133s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/hook/cmake_prefix_path.dsv'
+[9.134s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/hook/cmake_prefix_path.sh'
+[9.136s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/bin'
+[9.136s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/lib/pkgconfig/turtlebot3_manipulation_moveit_config.pc'
+[9.137s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/lib/python3.8/site-packages'
+[9.138s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/bin'
+[9.146s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/package.ps1'
+[9.147s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/package.dsv'
+[9.148s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/package.sh'
+[9.150s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/package.bash'
+[9.150s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/package.zsh'
+[9.151s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/share/colcon-core/packages/turtlebot3_manipulation_moveit_config)
+[9.225s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_bringup': AMENT_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/opt/ros/foxy /usr/bin/cmake --install /home/rocotics/ros2_ws/build/turtlebot3_manipulation_bringup
+[9.304s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_manipulation_moveit_config)
+[9.324s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config' for CMake module files
+[9.332s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config' for CMake config files
+[9.333s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_manipulation_moveit_config', 'cmake_prefix_path')
+[9.340s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/hook/cmake_prefix_path.ps1'
+[9.343s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/hook/cmake_prefix_path.dsv'
+[9.345s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/hook/cmake_prefix_path.sh'
+[9.347s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/bin'
+[9.348s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/lib/pkgconfig/turtlebot3_manipulation_moveit_config.pc'
+[9.349s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/lib/python3.8/site-packages'
+[9.349s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/bin'
+[9.359s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/package.ps1'
+[9.361s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/package.dsv'
+[9.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/package.sh'
+[9.365s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/package.bash'
+[9.367s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/package.zsh'
+[9.369s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config/share/colcon-core/packages/turtlebot3_manipulation_moveit_config)
+[9.372s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_hardware' with build type 'ament_cmake'
+[9.373s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_hardware'
+[9.384s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.385s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.429s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_manipulation_bringup)
+[9.439s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_bringup' returned '0': AMENT_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/opt/ros/foxy /usr/bin/cmake --install /home/rocotics/ros2_ws/build/turtlebot3_manipulation_bringup
+[9.466s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup' for CMake module files
+[9.468s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup' for CMake config files
+[9.469s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_manipulation_bringup', 'cmake_prefix_path')
+[9.481s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/share/turtlebot3_manipulation_bringup/hook/cmake_prefix_path.ps1'
+[9.483s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/share/turtlebot3_manipulation_bringup/hook/cmake_prefix_path.dsv'
+[9.485s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/share/turtlebot3_manipulation_bringup/hook/cmake_prefix_path.sh'
+[9.487s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/bin'
+[9.487s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/lib/pkgconfig/turtlebot3_manipulation_bringup.pc'
+[9.488s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/lib/python3.8/site-packages'
+[9.488s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/bin'
+[9.499s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/share/turtlebot3_manipulation_bringup/package.ps1'
+[9.500s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/share/turtlebot3_manipulation_bringup/package.dsv'
+[9.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/share/turtlebot3_manipulation_bringup/package.sh'
+[9.503s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/share/turtlebot3_manipulation_bringup/package.bash'
+[9.504s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/share/turtlebot3_manipulation_bringup/package.zsh'
+[9.504s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/share/colcon-core/packages/turtlebot3_manipulation_bringup)
+[9.532s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_hardware': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_hardware -DCMAKE_INSTALL_PREFIX=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware
+[9.643s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_manipulation_bringup)
+[9.657s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup' for CMake module files
+[9.658s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup' for CMake config files
+[9.659s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_manipulation_bringup', 'cmake_prefix_path')
+[9.666s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/share/turtlebot3_manipulation_bringup/hook/cmake_prefix_path.ps1'
+[9.668s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/share/turtlebot3_manipulation_bringup/hook/cmake_prefix_path.dsv'
+[9.669s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/share/turtlebot3_manipulation_bringup/hook/cmake_prefix_path.sh'
+[9.673s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/bin'
+[9.673s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/lib/pkgconfig/turtlebot3_manipulation_bringup.pc'
+[9.678s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/lib/python3.8/site-packages'
+[9.682s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/bin'
+[9.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/share/turtlebot3_manipulation_bringup/package.ps1'
+[9.691s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/share/turtlebot3_manipulation_bringup/package.dsv'
+[9.692s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/share/turtlebot3_manipulation_bringup/package.sh'
+[9.694s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/share/turtlebot3_manipulation_bringup/package.bash'
+[9.695s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/share/turtlebot3_manipulation_bringup/package.zsh'
+[9.696s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup/share/colcon-core/packages/turtlebot3_manipulation_bringup)
+[9.700s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_navigation2' with build type 'ament_cmake'
+[9.701s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_navigation2'
+[9.738s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.738s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.808s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_navigation2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_navigation2 -DCMAKE_INSTALL_PREFIX=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2
+[12.898s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_navigation2 -DCMAKE_INSTALL_PREFIX=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2
+[12.909s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_navigation2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/rocotics/ros2_ws/build/turtlebot3_manipulation_navigation2 -- -j2 -l2
+[13.104s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/rocotics/ros2_ws/build/turtlebot3_manipulation_navigation2 -- -j2 -l2
+[13.246s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_navigation2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/rocotics/ros2_ws/build/turtlebot3_manipulation_navigation2
+[13.328s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_manipulation_navigation2)
+[13.341s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_navigation2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/rocotics/ros2_ws/build/turtlebot3_manipulation_navigation2
+[13.343s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2' for CMake module files
+[13.344s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2' for CMake config files
+[13.345s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_manipulation_navigation2', 'cmake_prefix_path')
+[13.352s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/hook/cmake_prefix_path.ps1'
+[13.353s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/hook/cmake_prefix_path.dsv'
+[13.354s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/hook/cmake_prefix_path.sh'
+[13.356s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/bin'
+[13.356s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/lib/pkgconfig/turtlebot3_manipulation_navigation2.pc'
+[13.357s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/lib/python3.8/site-packages'
+[13.357s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/bin'
+[13.364s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/package.ps1'
+[13.367s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/package.dsv'
+[13.368s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/package.sh'
+[13.369s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/package.bash'
+[13.370s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/package.zsh'
+[13.371s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/share/colcon-core/packages/turtlebot3_manipulation_navigation2)
+[13.511s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_manipulation_navigation2)
+[13.526s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2' for CMake module files
+[13.527s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2' for CMake config files
+[13.528s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_manipulation_navigation2', 'cmake_prefix_path')
+[13.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/hook/cmake_prefix_path.ps1'
+[13.540s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/hook/cmake_prefix_path.dsv'
+[13.541s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/hook/cmake_prefix_path.sh'
+[13.543s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/bin'
+[13.543s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/lib/pkgconfig/turtlebot3_manipulation_navigation2.pc'
+[13.544s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/lib/python3.8/site-packages'
+[13.545s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/bin'
+[13.555s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/package.ps1'
+[13.557s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/package.dsv'
+[13.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/package.sh'
+[13.560s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/package.bash'
+[13.562s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/package.zsh'
+[13.563s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2/share/colcon-core/packages/turtlebot3_manipulation_navigation2)
+[13.566s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_teleop' with build type 'ament_cmake'
+[13.566s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_teleop'
+[13.574s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[13.575s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[13.646s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_teleop': AMENT_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/opt/ros/foxy /usr/bin/cmake /home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_teleop -DCMAKE_INSTALL_PREFIX=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop
+[17.276s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_hardware' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_hardware -DCMAKE_INSTALL_PREFIX=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware
+[17.287s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_hardware': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/rocotics/ros2_ws/build/turtlebot3_manipulation_hardware -- -j2 -l2
+[22.596s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_teleop' returned '0': AMENT_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/opt/ros/foxy /usr/bin/cmake /home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_teleop -DCMAKE_INSTALL_PREFIX=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop
+[22.599s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_teleop': AMENT_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/opt/ros/foxy /usr/bin/cmake --build /home/rocotics/ros2_ws/build/turtlebot3_manipulation_teleop -- -j2 -l2
+[30.314s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_hardware' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/rocotics/ros2_ws/build/turtlebot3_manipulation_hardware -- -j2 -l2
+[30.484s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_hardware': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/rocotics/ros2_ws/build/turtlebot3_manipulation_hardware
+[30.574s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_manipulation_hardware)
+[30.587s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware' for CMake module files
+[30.588s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_hardware' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/rocotics/ros2_ws/build/turtlebot3_manipulation_hardware
+[30.590s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware' for CMake config files
+[30.591s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_manipulation_hardware', 'cmake_prefix_path')
+[30.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/hook/cmake_prefix_path.ps1'
+[30.607s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/hook/cmake_prefix_path.dsv'
+[30.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/hook/cmake_prefix_path.sh'
+[30.610s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/lib'
+[30.611s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_manipulation_hardware', 'ld_library_path_lib')
+[30.620s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/hook/ld_library_path_lib.ps1'
+[30.621s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/hook/ld_library_path_lib.dsv'
+[30.622s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/hook/ld_library_path_lib.sh'
+[30.623s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/bin'
+[30.623s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/lib/pkgconfig/turtlebot3_manipulation_hardware.pc'
+[30.627s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/lib/python3.8/site-packages'
+[30.627s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/bin'
+[30.636s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/package.ps1'
+[30.638s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/package.dsv'
+[30.640s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/package.sh'
+[30.642s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/package.bash'
+[30.642s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/package.zsh'
+[30.643s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/share/colcon-core/packages/turtlebot3_manipulation_hardware)
+[30.809s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_manipulation_hardware)
+[30.819s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware' for CMake module files
+[30.821s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware' for CMake config files
+[30.822s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_manipulation_hardware', 'cmake_prefix_path')
+[30.834s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/hook/cmake_prefix_path.ps1'
+[30.837s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/hook/cmake_prefix_path.dsv'
+[30.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/hook/cmake_prefix_path.sh'
+[30.840s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/lib'
+[30.840s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_manipulation_hardware', 'ld_library_path_lib')
+[30.849s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/hook/ld_library_path_lib.ps1'
+[30.851s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/hook/ld_library_path_lib.dsv'
+[30.852s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/hook/ld_library_path_lib.sh'
+[30.854s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/bin'
+[30.854s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/lib/pkgconfig/turtlebot3_manipulation_hardware.pc'
+[30.855s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/lib/python3.8/site-packages'
+[30.855s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/bin'
+[30.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/package.ps1'
+[30.869s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/package.dsv'
+[30.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/package.sh'
+[30.874s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/package.bash'
+[30.875s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/share/turtlebot3_manipulation_hardware/package.zsh'
+[30.877s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/share/colcon-core/packages/turtlebot3_manipulation_hardware)
+[30.880s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rocotics/ros2_ws/src/ros2_aruco/ros2_aruco' with build type 'ament_python'
+[30.880s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco', 'ament_prefix_path')
+[30.888s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/ros2_aruco/share/ros2_aruco/hook/ament_prefix_path.ps1'
+[30.889s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/ros2_aruco/share/ros2_aruco/hook/ament_prefix_path.dsv'
+[30.890s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/ros2_aruco/share/ros2_aruco/hook/ament_prefix_path.sh'
+[30.918s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[30.919s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[31.801s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rocotics/ros2_ws/src/ros2_aruco/ros2_aruco'
+[31.810s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[31.811s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[33.268s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/src/ros2_aruco/ros2_aruco': PYTHONPATH=/home/rocotics/ros2_ws/build/ros2_aruco/prefix_override:/home/rocotics/ros2_ws/install/ros2_aruco/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/ros2_aruco build --build-base /home/rocotics/ros2_ws/build/ros2_aruco/build install --record /home/rocotics/ros2_ws/build/ros2_aruco/install.log --install-scripts $base/lib/ros2_aruco --single-version-externally-managed
+[34.435s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/ros2_aruco' for CMake module files
+[34.437s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/src/ros2_aruco/ros2_aruco' returned '0': PYTHONPATH=/home/rocotics/ros2_ws/build/ros2_aruco/prefix_override:/home/rocotics/ros2_ws/install/ros2_aruco/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/ros2_aruco build --build-base /home/rocotics/ros2_ws/build/ros2_aruco/build install --record /home/rocotics/ros2_ws/build/ros2_aruco/install.log --install-scripts $base/lib/ros2_aruco --single-version-externally-managed
+[34.439s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/ros2_aruco' for CMake config files
+[34.441s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/ros2_aruco/lib'
+[34.441s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/ros2_aruco/bin'
+[34.441s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/ros2_aruco/lib/pkgconfig/ros2_aruco.pc'
+[34.442s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/ros2_aruco/lib/python3.8/site-packages'
+[34.442s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco', 'pythonpath')
+[34.450s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/ros2_aruco/share/ros2_aruco/hook/pythonpath.ps1'
+[34.452s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/ros2_aruco/share/ros2_aruco/hook/pythonpath.dsv'
+[34.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/ros2_aruco/share/ros2_aruco/hook/pythonpath.sh'
+[34.456s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/ros2_aruco/bin'
+[34.456s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_aruco)
+[34.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/ros2_aruco/share/ros2_aruco/package.ps1'
+[34.472s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rocotics/ros2_ws/install/ros2_aruco/share/ros2_aruco/package.dsv'
+[34.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/ros2_aruco/share/ros2_aruco/package.sh'
+[34.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/ros2_aruco/share/ros2_aruco/package.bash'
+[34.480s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/ros2_aruco/share/ros2_aruco/package.zsh'
+[34.482s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rocotics/ros2_ws/install/ros2_aruco/share/colcon-core/packages/ros2_aruco)
+[34.486s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rocotics/ros2_ws/src/ros2_aruco/ros2_aruco_interfaces' with build type 'ament_cmake'
+[34.487s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rocotics/ros2_ws/src/ros2_aruco/ros2_aruco_interfaces'
+[34.514s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[34.523s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[34.596s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/rocotics/ros2_ws/src/ros2_aruco/ros2_aruco_interfaces -DCMAKE_INSTALL_PREFIX=/home/rocotics/ros2_ws/install/ros2_aruco_interfaces
+[39.955s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_teleop' returned '0': AMENT_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/opt/ros/foxy /usr/bin/cmake --build /home/rocotics/ros2_ws/build/turtlebot3_manipulation_teleop -- -j2 -l2
+[40.079s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_teleop': AMENT_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/opt/ros/foxy /usr/bin/cmake --install /home/rocotics/ros2_ws/build/turtlebot3_manipulation_teleop
+[40.138s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_manipulation_teleop)
+[40.145s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation_teleop' returned '0': AMENT_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/opt/ros/foxy /usr/bin/cmake --install /home/rocotics/ros2_ws/build/turtlebot3_manipulation_teleop
+[40.155s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop' for CMake module files
+[40.157s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop' for CMake config files
+[40.158s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_manipulation_teleop', 'cmake_prefix_path')
+[40.166s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/hook/cmake_prefix_path.ps1'
+[40.168s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/hook/cmake_prefix_path.dsv'
+[40.168s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/hook/cmake_prefix_path.sh'
+[40.170s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/lib'
+[40.170s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/bin'
+[40.170s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/lib/pkgconfig/turtlebot3_manipulation_teleop.pc'
+[40.171s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/lib/python3.8/site-packages'
+[40.172s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/bin'
+[40.178s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/package.ps1'
+[40.180s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/package.dsv'
+[40.183s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/package.sh'
+[40.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/package.bash'
+[40.186s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/package.zsh'
+[40.187s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/share/colcon-core/packages/turtlebot3_manipulation_teleop)
+[40.324s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_manipulation_teleop)
+[40.333s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop' for CMake module files
+[40.334s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop' for CMake config files
+[40.336s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_manipulation_teleop', 'cmake_prefix_path')
+[40.348s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/hook/cmake_prefix_path.ps1'
+[40.350s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/hook/cmake_prefix_path.dsv'
+[40.352s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/hook/cmake_prefix_path.sh'
+[40.355s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/lib'
+[40.355s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/bin'
+[40.355s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/lib/pkgconfig/turtlebot3_manipulation_teleop.pc'
+[40.356s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/lib/python3.8/site-packages'
+[40.357s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/bin'
+[40.368s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/package.ps1'
+[40.371s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/package.dsv'
+[40.374s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/package.sh'
+[40.376s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/package.bash'
+[40.377s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/share/turtlebot3_manipulation_teleop/package.zsh'
+[40.378s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop/share/colcon-core/packages/turtlebot3_manipulation_teleop)
+[40.380s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation' with build type 'ament_cmake'
+[40.381s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation'
+[40.389s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[40.389s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[40.510s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation': AMENT_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer:/opt/ros/foxy LD_LIBRARY_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation -DCMAKE_INSTALL_PREFIX=/home/rocotics/ros2_ws/install/turtlebot3_manipulation
+[41.971s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/rocotics/ros2_ws/src/ros2_aruco/ros2_aruco_interfaces -DCMAKE_INSTALL_PREFIX=/home/rocotics/ros2_ws/install/ros2_aruco_interfaces
+[41.984s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/rocotics/ros2_ws/build/ros2_aruco_interfaces -- -j2 -l2
+[44.162s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation' returned '0': AMENT_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer:/opt/ros/foxy LD_LIBRARY_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/rocotics/ros2_ws/src/turtlebot3_manipulation/turtlebot3_manipulation -DCMAKE_INSTALL_PREFIX=/home/rocotics/ros2_ws/install/turtlebot3_manipulation
+[44.165s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation': AMENT_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer:/opt/ros/foxy LD_LIBRARY_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/rocotics/ros2_ws/build/turtlebot3_manipulation -- -j2 -l2
+[44.402s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation' returned '0': AMENT_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer:/opt/ros/foxy LD_LIBRARY_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/rocotics/ros2_ws/build/turtlebot3_manipulation -- -j2 -l2
+[44.539s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation': AMENT_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer:/opt/ros/foxy LD_LIBRARY_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/rocotics/ros2_ws/build/turtlebot3_manipulation
+[44.636s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_manipulation)
+[44.649s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/turtlebot3_manipulation' returned '0': AMENT_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_teleop:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_moveit_config:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_bringup:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_navigation2:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_description:/home/rocotics/ros2_ws/install/turtlebot3_manipulation_cartographer:/opt/ros/foxy LD_LIBRARY_PATH=/home/rocotics/ros2_ws/install/turtlebot3_manipulation_hardware/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/rocotics/ros2_ws/build/turtlebot3_manipulation
+[44.654s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation' for CMake module files
+[44.671s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation' for CMake config files
+[44.672s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_manipulation', 'cmake_prefix_path')
+[44.690s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/hook/cmake_prefix_path.ps1'
+[44.693s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/hook/cmake_prefix_path.dsv'
+[44.694s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/hook/cmake_prefix_path.sh'
+[44.696s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation/bin'
+[44.696s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation/lib/pkgconfig/turtlebot3_manipulation.pc'
+[44.697s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation/lib/python3.8/site-packages'
+[44.698s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation/bin'
+[44.713s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/package.ps1'
+[44.715s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/package.dsv'
+[44.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/package.sh'
+[44.732s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/package.bash'
+[44.734s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/package.zsh'
+[44.735s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rocotics/ros2_ws/install/turtlebot3_manipulation/share/colcon-core/packages/turtlebot3_manipulation)
+[45.098s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_manipulation)
+[45.130s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation' for CMake module files
+[45.141s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation' for CMake config files
+[45.143s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_manipulation', 'cmake_prefix_path')
+[45.149s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/hook/cmake_prefix_path.ps1'
+[45.160s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/hook/cmake_prefix_path.dsv'
+[45.162s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/hook/cmake_prefix_path.sh'
+[45.166s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation/bin'
+[45.166s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation/lib/pkgconfig/turtlebot3_manipulation.pc'
+[45.179s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation/lib/python3.8/site-packages'
+[45.180s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/turtlebot3_manipulation/bin'
+[45.197s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/package.ps1'
+[45.199s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rocotics/ros2_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/package.dsv'
+[45.201s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/package.sh'
+[45.204s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/package.bash'
+[45.209s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/turtlebot3_manipulation/share/turtlebot3_manipulation/package.zsh'
+[45.213s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rocotics/ros2_ws/install/turtlebot3_manipulation/share/colcon-core/packages/turtlebot3_manipulation)
+[54.510s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/rocotics/ros2_ws/build/ros2_aruco_interfaces -- -j2 -l2
+[54.828s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rocotics/ros2_ws/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/rocotics/ros2_ws/build/ros2_aruco_interfaces
+[55.140s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_aruco_interfaces)
+[55.154s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rocotics/ros2_ws/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/rocotics/ros2_ws/build/ros2_aruco_interfaces
+[55.159s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces' for CMake module files
+[55.161s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces' for CMake config files
+[55.162s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'cmake_prefix_path')
+[55.171s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.ps1'
+[55.173s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.dsv'
+[55.174s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.sh'
+[55.175s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/lib'
+[55.176s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'ld_library_path_lib')
+[55.182s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.ps1'
+[55.184s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.dsv'
+[55.184s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.sh'
+[55.186s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/bin'
+[55.186s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/lib/pkgconfig/ros2_aruco_interfaces.pc'
+[55.187s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages'
+[55.187s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'pythonpath')
+[55.194s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/pythonpath.ps1'
+[55.195s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/pythonpath.dsv'
+[55.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/pythonpath.sh'
+[55.197s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/bin'
+[55.206s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.ps1'
+[55.220s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.dsv'
+[55.222s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.sh'
+[55.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.bash'
+[55.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.zsh'
+[55.225s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/colcon-core/packages/ros2_aruco_interfaces)
+[55.566s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_aruco_interfaces)
+[55.579s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces' for CMake module files
+[55.581s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces' for CMake config files
+[55.582s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'cmake_prefix_path')
+[55.590s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.ps1'
+[55.593s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.dsv'
+[55.594s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.sh'
+[55.596s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/lib'
+[55.597s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'ld_library_path_lib')
+[55.605s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.ps1'
+[55.606s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.dsv'
+[55.607s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.sh'
+[55.609s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/bin'
+[55.609s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/lib/pkgconfig/ros2_aruco_interfaces.pc'
+[55.610s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/lib/python3.8/site-packages'
+[55.610s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'pythonpath')
+[55.616s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/pythonpath.ps1'
+[55.618s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/pythonpath.dsv'
+[55.619s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/pythonpath.sh'
+[55.621s] Level 1:colcon.colcon_core.environment:checking '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/bin'
+[55.629s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.ps1'
+[55.631s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.dsv'
+[55.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.sh'
+[55.636s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.bash'
+[55.640s] INFO:colcon.colcon_core.shell:Creating package script '/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.zsh'
+[55.644s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rocotics/ros2_ws/install/ros2_aruco_interfaces/share/colcon-core/packages/ros2_aruco_interfaces)
+[55.650s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[55.651s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[55.651s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[55.652s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[55.680s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[55.681s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[55.681s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[55.743s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[55.752s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rocotics/ros2_ws/install/local_setup.ps1'
+[55.756s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rocotics/ros2_ws/install/_local_setup_util_ps1.py'
+[55.760s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rocotics/ros2_ws/install/setup.ps1'
+[55.766s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rocotics/ros2_ws/install/local_setup.sh'
+[55.767s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rocotics/ros2_ws/install/_local_setup_util_sh.py'
+[55.769s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rocotics/ros2_ws/install/setup.sh'
+[55.776s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rocotics/ros2_ws/install/local_setup.bash'
+[55.777s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rocotics/ros2_ws/install/setup.bash'
+[55.783s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rocotics/ros2_ws/install/local_setup.zsh'
+[55.784s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rocotics/ros2_ws/install/setup.zsh'

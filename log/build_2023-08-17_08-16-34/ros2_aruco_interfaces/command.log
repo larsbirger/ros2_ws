@@ -1,0 +1,6 @@
+Invoking command in '/home/rocotics/ros2_ws/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/rocotics/ros2_ws/src/ros2_aruco/ros2_aruco_interfaces -DCMAKE_INSTALL_PREFIX=/home/rocotics/ros2_ws/install/ros2_aruco_interfaces
+Invoked command in '/home/rocotics/ros2_ws/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/rocotics/ros2_ws/src/ros2_aruco/ros2_aruco_interfaces -DCMAKE_INSTALL_PREFIX=/home/rocotics/ros2_ws/install/ros2_aruco_interfaces
+Invoking command in '/home/rocotics/ros2_ws/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/rocotics/ros2_ws/build/ros2_aruco_interfaces -- -j2 -l2
+Invoked command in '/home/rocotics/ros2_ws/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/rocotics/ros2_ws/build/ros2_aruco_interfaces -- -j2 -l2
+Invoking command in '/home/rocotics/ros2_ws/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/rocotics/ros2_ws/build/ros2_aruco_interfaces
+Invoked command in '/home/rocotics/ros2_ws/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/rocotics/ros2_ws/build/ros2_aruco_interfaces
